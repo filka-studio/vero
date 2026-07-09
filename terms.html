@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: 'Inter', Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+    a { color: #FF5A1F; text-decoration: none; transition: color 0.2s ease; }
+    a:hover { color: #FF8654; }
+  </style>
+</helmet>
+
+<div style="background:#0A0A0C; width:100%; min-height:100vh; display:flex; flex-direction:column;">
+
+  <!-- ANNOUNCEMENT BAR -->
+  <div style="background:#2A0E08; padding:10px 20px; text-align:center; font-family:'JetBrains Mono', monospace; font-size:13px; color:#FFB39A;">
+    Lista de espera aberta, vagas limitadas para o beta <a href="index.html#waitlist-hero" style="color:#FF8654; font-weight:600; border-bottom:1px solid rgba(255,134,84,0.4); transition:border-color 0.2s ease;" style-hover="border-color:#FF8654;">Garantir vaga ↗</a>
+  </div>
+
+  <!-- NAV -->
+  <nav data-screen-label="Nav" style="background:#0A0A0C; border-bottom:1px solid rgba(255,255,255,0.1); position:sticky; top:0; z-index:50;">
+    <div style="display:flex; align-items:center; justify-content:space-between; max-width:1240px; margin:0 auto; padding:20px 48px;">
+      <a href="index.html" style="display:flex; align-items:center; gap:9px;">
+        <img src="assets/vero-logo-mark.png" alt="Vero" style="width:24px; height:auto; flex-shrink:0;">
+        <div style="font-family:'Space Grotesk', sans-serif; font-size:21px; font-weight:700; color:#FFFFFF; letter-spacing:-0.01em;">Vero</div>
+      </a>
+      <div style="display:flex; align-items:center; gap:36px;">
+        <a href="index.html#lgpd" style="color:#C7C7CC; font-size:14px; font-weight:500; transition:color 0.2s ease;" style-hover="color:#FFFFFF;">Produto</a>
+        <a href="index.html#problema" style="color:#C7C7CC; font-size:14px; font-weight:500; transition:color 0.2s ease;" style-hover="color:#FFFFFF;">Por que Vero</a>
+        <a href="index.html#comparativo" style="color:#C7C7CC; font-size:14px; font-weight:500; transition:color 0.2s ease;" style-hover="color:#FFFFFF;">Comparativo</a>
+        <a href="index.html#faq" style="color:#C7C7CC; font-size:14px; font-weight:500; transition:color 0.2s ease;" style-hover="color:#FFFFFF;">FAQ</a>
+      </div>
+      <div style="display:flex; align-items:center; gap:14px;">
+        <a href="demo.html" style="color:#C7C7CC; font-size:13px; font-weight:600; font-family:'JetBrains Mono', monospace; transition:color 0.2s ease;" style-hover="color:#FF8654;">Ver demo ↗</a>
+        <a href="index.html#waitlist-hero" style="background:#FF5A1F; color:#FFFFFF; font-family:'JetBrains Mono', monospace; font-size:13px; font-weight:600; padding:11px 18px; border-radius:6px; display:inline-flex; align-items:center; gap:8px; transition:background 0.2s ease, transform 0.2s ease;" style-hover="background:#FF7A45; transform:translateY(-1px);">Entrar na lista →</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CONTENT -->
+  <main style="flex:1; padding:80px 48px 100px;">
+    <div style="max-width:740px; margin:0 auto;">
+      <div style="font-family:'JetBrains Mono', monospace; color:#FF5A1F; font-size:13px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:18px;">/ legal</div>
+      <h1 style="font-family:'Space Grotesk', sans-serif; font-size:40px; font-weight:700; letter-spacing:-0.02em; color:#FFFFFF; margin:0 0 12px;">Termos de Uso</h1>
+      <p style="font-family:'JetBrains Mono', monospace; font-size:13px; color:#6E6E76; margin:0 0 48px;">Última atualização: julho de 2026</p>
+
+      <div style="display:flex; flex-direction:column; gap:32px;">
+        <div>
+          <h2 style="font-family:'Space Grotesk', sans-serif; font-size:20px; font-weight:700; color:#FFFFFF; margin:0 0 10px;">1. Sobre esta página</h2>
+          <p style="font-size:15px; line-height:1.7; color:#9497A0; margin:0;">Este site é uma lista de espera para o Vero, um produto de analytics ainda em desenvolvimento. Ao se cadastrar, você concorda em receber e-mails sobre o lançamento e novidades do produto. Você pode cancelar essa inscrição a qualquer momento.</p>
+        </div>
+        <div>
+          <h2 style="font-family:'Space Grotesk', sans-serif; font-size:20px; font-weight:700; color:#FFFFFF; margin:0 0 10px;">2. Sem garantia de lançamento ou prazo</h2>
+          <p style="font-size:15px; line-height:1.7; color:#9497A0; margin:0;">O Vero está em construção. Entrar na lista de espera não garante acesso antecipado, data de lançamento ou qualquer funcionalidade específica do produto final.</p>
+        </div>
+        <div>
+          <h2 style="font-family:'Space Grotesk', sans-serif; font-size:20px; font-weight:700; color:#FFFFFF; margin:0 0 10px;">3. Uso do conteúdo do site</h2>
+          <p style="font-size:15px; line-height:1.7; color:#9497A0; margin:0;">Textos, marca e demonstrações apresentadas aqui pertencem ao Vero e não podem ser reproduzidos sem autorização.</p>
+        </div>
+        <div>
+          <h2 style="font-family:'Space Grotesk', sans-serif; font-size:20px; font-weight:700; color:#FFFFFF; margin:0 0 10px;">4. Contato</h2>
+          <p style="font-size:15px; line-height:1.7; color:#9497A0; margin:0;">Dúvidas sobre estes termos: <a href="mailto:filkastudio@outlook.com.br">filkastudio@outlook.com.br</a></p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer data-screen-label="Footer" style="background:#0A0A0C; border-top:1px solid rgba(255,255,255,0.1); padding:64px 48px 32px;">
+    <div style="display:flex; gap:48px; flex-wrap:wrap; justify-content:space-between; max-width:1140px; margin:0 auto 40px;">
+      <div style="max-width:320px;">
+        <div style="display:flex; align-items:center; gap:9px; margin-bottom:12px;">
+          <img src="assets/vero-logo-mark.png" alt="Vero" style="width:22px; height:auto; flex-shrink:0;">
+          <div style="font-family:'Space Grotesk', sans-serif; font-size:20px; font-weight:700; color:#FFFFFF;">Vero</div>
+        </div>
+        <p style="font-size:14px; line-height:1.6; color:#8A8A92; margin:0 0 20px;">Analytics sem cookie, dado 100% no Brasil. Pensado pra quem não quer dor de cabeça com LGPD.</p>
+        <div style="display:flex; align-items:center; gap:10px;">
+          <a href="#" aria-label="X (Twitter)" style="width:36px; height:36px; border-radius:50%; border:1px solid rgba(255,255,255,0.16); display:flex; align-items:center; justify-content:center; color:#C7C7CC; font-family:'JetBrains Mono', monospace; font-size:13px; font-weight:600; transition:border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;" style-hover="border-color:#FF5A1F; color:#FF5A1F; transform:translateY(-2px);">𝕏</a>
+          <a href="#" aria-label="LinkedIn" style="width:36px; height:36px; border-radius:50%; border:1px solid rgba(255,255,255,0.16); display:flex; align-items:center; justify-content:center; color:#C7C7CC; font-family:'JetBrains Mono', monospace; font-size:12px; font-weight:700; transition:border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;" style-hover="border-color:#FF5A1F; color:#FF5A1F; transform:translateY(-2px);">in</a>
+          <a href="#" aria-label="GitHub" style="width:36px; height:36px; border-radius:50%; border:1px solid rgba(255,255,255,0.16); display:flex; align-items:center; justify-content:center; color:#C7C7CC; font-family:'JetBrains Mono', monospace; font-size:12px; font-weight:700; transition:border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;" style-hover="border-color:#FF5A1F; color:#FF5A1F; transform:translateY(-2px);">gh</a>
+        </div>
+      </div>
+      <div style="display:flex; gap:56px; flex-wrap:wrap;">
+        <div>
+          <div style="font-family:'JetBrains Mono', monospace; font-size:12px; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:#FFFFFF; margin-bottom:16px;">Produto</div>
+          <div style="display:flex; flex-direction:column; gap:12px;">
+            <a href="index.html#lgpd" style="color:#8A8A92; font-size:14px; transition:color 0.2s ease;" style-hover="color:#FF5A1F;">Como funciona</a>
+            <a href="index.html#problema" style="color:#8A8A92; font-size:14px; transition:color 0.2s ease;" style-hover="color:#FF5A1F;">LGPD &amp; compliance</a>
+            <a href="index.html#comparativo" style="color:#8A8A92; font-size:14px; transition:color 0.2s ease;" style-hover="color:#FF5A1F;">Comparativo</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-family:'JetBrains Mono', monospace; font-size:12px; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:#FFFFFF; margin-bottom:16px;">Empresa</div>
+          <div style="display:flex; flex-direction:column; gap:12px;">
+            <a href="mailto:filkastudio@outlook.com.br" style="color:#8A8A92; font-size:14px; transition:color 0.2s ease;" style-hover="color:#FF5A1F;">Contato</a>
+            <a href="index.html#faq" style="color:#8A8A92; font-size:14px; transition:color 0.2s ease;" style-hover="color:#FF5A1F;">Lista de espera</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-family:'JetBrains Mono', monospace; font-size:12px; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:#FFFFFF; margin-bottom:16px;">Legal</div>
+          <div style="display:flex; flex-direction:column; gap:12px;">
+            <a href="privacy.html" style="color:#8A8A92; font-size:14px; transition:color 0.2s ease;" style-hover="color:#FF5A1F;">Política de Privacidade</a>
+            <a href="terms.html" style="color:#FF5A1F; font-size:14px;">Termos de Uso</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="border-top:1px solid rgba(255,255,255,0.1); padding-top:24px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; max-width:1140px; margin:0 auto;">
+      <div style="font-family:'JetBrains Mono', monospace; font-size:12px; color:#6E6E76;">© 2026 vero · hospedado 100% no brasil</div>
+      <div style="font-family:'JetBrains Mono', monospace; font-size:12px; color:#6E6E76;">lgpd-compliant by design</div>
+    </div>
+  </footer>
+
+</div>
+
+</x-dc>
+</body>
+</html>
